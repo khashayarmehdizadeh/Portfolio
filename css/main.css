@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Vazirmatn', sans-serif;
 }
 
 body {
@@ -18,14 +18,42 @@ body {
     max-width: 1200px;
     margin: auto;
     overflow: hidden;
+    padding: 0 15px;
 }
 
 /* Header */
 header {
     background: linear-gradient(135deg, #77aaff, #333);
     color: #fff;
-    padding: 60px 0;
+    padding: 20px 0;
     text-align: center;
+    position: relative;
+}
+
+header nav {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #77aaff;
 }
 
 header h1 {
@@ -41,13 +69,13 @@ header p {
 /* About Section */
 #about {
     background: #fff;
-    padding: 30px 0;
+    padding: 60px 0;
     text-align: center;
 }
 
 #about h2 {
     color: #333;
-    font-size: 2em;
+    font-size: 2.5em;
     margin-bottom: 20px;
 }
 
@@ -61,12 +89,12 @@ header p {
 /* Skills Section */
 #skills {
     background: #e9e9e9;
-    padding: 30px 0;
+    padding: 60px 0;
 }
 
 #skills h2 {
     color: #333;
-    font-size: 2em;
+    font-size: 2.5em;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -97,12 +125,12 @@ header p {
 /* Projects Section */
 #projects {
     background: #fff;
-    padding: 30px 0;
+    padding: 60px 0;
 }
 
 #projects h2 {
     color: #333;
-    font-size: 2em;
+    font-size: 2.5em;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -128,6 +156,26 @@ header p {
     color: #333;
 }
 
+/* Contact Section */
+#contact {
+    background: #e9e9e9;
+    padding: 60px 0;
+    text-align: center;
+}
+
+#contact h2 {
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 /* Footer */
 footer {
     background: #333;
@@ -139,7 +187,27 @@ footer {
     width: 100%;
 }
 
+footer p {
+    margin: 0;
+}
+
 footer a {
     color: #77aaff;
     text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #skills ul {
+        flex-direction: column;
+    }
+
+    #skills ul li {
+        flex: 1 0 100%;
+    }
 }
