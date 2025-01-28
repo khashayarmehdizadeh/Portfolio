@@ -1,0 +1,145 @@
+/* Reset some basic elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #77aaff, #333);
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* About Section */
+#about {
+    background: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+#about h2 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Skills Section */
+#skills {
+    background: #e9e9e9;
+    padding: 30px 0;
+}
+
+#skills h2 {
+    color: #333;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#skills ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+}
+
+#skills ul li {
+    background: #fff;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    flex: 1 0 21%; /* Flexbox for responsive design */
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+#skills ul li:hover {
+    transform: scale(1.05);
+}
+
+/* Projects Section */
+#projects {
+    background: #fff;
+    padding: 30px 0;
+}
+
+#projects h2 {
+    color: #333;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#projects .project {
+    background: #e9e9e9;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: right;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#projects .project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+#projects .project h3 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #77aaff;
+    text-decoration: none;
+}
